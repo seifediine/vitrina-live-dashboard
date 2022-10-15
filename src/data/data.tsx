@@ -16,8 +16,6 @@ import {
   Share,
   Eye,
 } from '../assets/icons'
-
-import { navbarTitleProps } from './types'
 interface SubListItem {
   name: string
   path: string
@@ -166,7 +164,7 @@ export const secondLinks: Array<SidebarItem> = [
   },
 ]
 
-export const titles: navbarTitleProps = {
+export const titles: { [key: string]: string } = {
   '/': 'Dashboard',
   '/procduts': 'Products',
   '/categories': 'Categories',

@@ -14,7 +14,7 @@ import {
 
 const styles = {
   container: {
-    padding: '0 30px',
+    padding: '0px 40px',
   },
 }
 
@@ -22,7 +22,7 @@ const Dashboard = () => {
   return (
     <Stack direction='column' spacing={-6}>
       <Header text='Welcome Mario' email='app.vetrinalive.it/fenoh-store' />
-      <Container style={styles.container}>
+      <Container maxWidth='xl' style={styles.container}>
         <Grid container spacing={3}>
           {/* Main Content */}
           <Grid container item lg={8} spacing={3}>
@@ -43,7 +43,7 @@ const Dashboard = () => {
             </Grid>
           </Grid>
           {/* Side Content */}
-          <Grid container item lg={4} spacing={2}>
+          <Grid container item lg={4} spacing={3}>
             <Grid item xs={6} sm={6} md={6} lg={12}>
               <ConfigureShop />
             </Grid>
