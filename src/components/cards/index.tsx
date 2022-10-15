@@ -1,0 +1,5 @@
+export { default as Visitors } from './Visitors'
+export { default as Orders } from './Orders'
+export { default as MobileApps } from './MobileApps'
+export { default as Extensions } from './Extensions'
+export { default as LatestNews } from './LatestNews'
