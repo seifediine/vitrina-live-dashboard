@@ -21,7 +21,7 @@ const styles = {
 const Dashboard = () => {
   return (
     <Stack direction='column' spacing={-6}>
-      <Header text='Welcome Mario' email='app.vetrinalive.it/fenoh-store' />
+      <Header text='Welcome Mario' link='app.vetrinalive.it/fenoh-store' />
       <Container maxWidth='xl' style={styles.container}>
         <Grid container spacing={3}>
           {/* Main Content */}
@@ -43,7 +43,7 @@ const Dashboard = () => {
             </Grid>
           </Grid>
           {/* Side Content */}
-          <Grid container item lg={4} spacing={3}>
+          <Grid container item lg={4}>
             <Grid item xs={6} sm={6} md={6} lg={12}>
               <ConfigureShop />
             </Grid>

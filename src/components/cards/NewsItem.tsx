@@ -15,6 +15,16 @@ type NewsProps = {
     }
     _type: string
   }
+  provider?: Array<{
+    _type?: string
+    name: string
+    image?: {
+      thumbnail: {
+        _type: string
+        contentUrl: string
+      }
+    }
+  }>
 }
 
 const styles = {
@@ -55,7 +65,7 @@ const styles = {
   },
 }
 
-const NewsItem = ({ category, name, url, image }: NewsProps) => {
+const NewsItem = ({ category, name, url, image, provider }: NewsProps) => {
   // const title = Str(name).limit(50, '...').get()
 
   return (

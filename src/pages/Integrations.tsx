@@ -1,7 +1,12 @@
-import React from 'react'
+import { Stack } from '@mui/material'
+import { Header } from '../components'
 
 const Integrations = () => {
-  return <div>Integrations</div>
+  return (
+    <Stack>
+      <Header text='Integrations' link='app.vitrinalive.it/fenoh-store' />
+    </Stack>
+  )
 }
 
 export default Integrations

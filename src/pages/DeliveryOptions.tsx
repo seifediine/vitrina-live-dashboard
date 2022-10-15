@@ -1,7 +1,12 @@
-import React from 'react'
+import { Stack } from '@mui/material'
+import { Header } from '../components'
 
 const DeliveryOptions = () => {
-  return <div>DeliveryOptions</div>
+  return (
+    <Stack>
+      <Header text='Delivery Options' link='app.vitrinalive.it/fenoh-store' />
+    </Stack>
+  )
 }
 
 export default DeliveryOptions

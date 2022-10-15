@@ -1,7 +1,15 @@
-import React from 'react'
+import { Stack } from '@mui/material'
+import { Header } from '../components'
 
 const Extensions = () => {
-  return <div>Extensions</div>
+  return (
+    <Stack>
+      <Header
+        text=' Vitrinalive extensions marketplace'
+        link='app.vitrinalive.it/fenoh-store'
+      />
+    </Stack>
+  )
 }
 
 export default Extensions

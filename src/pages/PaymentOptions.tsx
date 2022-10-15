@@ -1,7 +1,12 @@
-import React from 'react'
+import { Stack } from '@mui/material'
+import { Header } from '../components'
 
 const PaymentOptions = () => {
-  return <div>PaymentOptions</div>
+  return (
+    <Stack>
+      <Header text='Payment Options' link='app.vitrinalive.it/fenoh-store' />
+    </Stack>
+  )
 }
 
 export default PaymentOptions

@@ -20,7 +20,16 @@ type newsItemProps = {
     _type: string
   }
   name: string
-  provider?: {}[]
+  provider?: Array<{
+    image?: {
+      thumbnail: {
+        contentUrl: string
+        _type: string
+      }
+    }
+    name: string
+    _type?: string
+  }>
   _type: string
   url: string
 }

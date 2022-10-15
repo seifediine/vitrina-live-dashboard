@@ -26,17 +26,17 @@ const styles = {
 
 interface HeaderProps {
   text: string
-  email: string
+  link: string
 }
 
-const Header = ({ text, email }: HeaderProps) => {
+const Header = ({ text, link }: HeaderProps) => {
   return (
     <Box style={styles.header}>
       <Typography variant='h4' style={styles.welcomeText}>
         {text}
       </Typography>
       <Link to='/' style={styles.link}>
-        <Typography variant='body1'>{email}</Typography>
+        <Typography variant='body1'>{link}</Typography>
         <ExternalLink color='#fff' />
       </Link>
     </Box>
