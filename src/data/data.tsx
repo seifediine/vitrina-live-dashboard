@@ -17,7 +17,19 @@ import {
   Eye,
 } from '../assets/icons'
 
-export const mainLinks = [
+interface SubListItem {
+  name: string
+  path: string
+}
+
+interface SidebarItem {
+  name: string
+  subList?: Array<SubListItem>
+  path?: string
+  icon?: JSX.Element
+}
+
+export const mainLinks: Array<SidebarItem> = [
   {
     name: 'Dashboard',
     path: '/',
@@ -135,7 +147,7 @@ export const mainLinks = [
   },
 ]
 
-export const secondLinks = [
+export const secondLinks: Array<SidebarItem> = [
   {
     name: 'Customer Support',
     path: '/support',

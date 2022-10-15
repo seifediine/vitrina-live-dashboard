@@ -15,7 +15,11 @@ import logo from '../assets/images/logo.svg'
 // import { titles } from '../data/data'
 import { AppBar, DrawerHeader, Main } from '../styled'
 import { LayoutProps } from '../data/types'
-
+import {
+  MainSidebarList,
+  SecondarySidebarList,
+  SelectShop,
+} from '../components'
 const drawerWidth = 255
 
 const Layout = ({ children }: LayoutProps) => {
@@ -79,12 +83,12 @@ const Layout = ({ children }: LayoutProps) => {
           </IconButton>
         </DrawerHeader>
         {/* First List of Links on the Sidebar */}
-        {/* <MainList /> */}
+        <MainSidebarList />
         <Divider />
         {/* Second List of Links on the Sidebar */}
-        {/* <SecondList /> */}
+        <SecondarySidebarList />
         <DrawerHeader />
-        {/* <SelectShop /> */}
+        <SelectShop />
       </Drawer>
       <Main open={open}>
         <DrawerHeader />

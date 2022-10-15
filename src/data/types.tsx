@@ -7,8 +7,7 @@ export type IconProps = {
 export type LayoutProps = {
   children: ReactNode
 }
-
-export type LinkItemProps = {
+export interface SidebarItemProps {
   name: string
   icon?: JSX.Element
   path?: string
