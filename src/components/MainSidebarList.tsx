@@ -1,7 +1,6 @@
 import { List } from '@mui/material'
 import SidebarItem from './SidebarItem'
 import { mainLinks } from '../data/data'
-import { SidebarItemProps } from '../data/types'
 
 const MainSidebarList = (): JSX.Element => {
   return (

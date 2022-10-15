@@ -12,7 +12,7 @@ import {
 import CssBaseline from '@mui/material/CssBaseline'
 import { Menu, Zap } from '../assets/icons'
 import logo from '../assets/images/logo.svg'
-// import { titles } from '../data/data'
+import { titles } from '../data/data'
 import { AppBar, DrawerHeader, Main } from '../styled'
 import { LayoutProps } from '../data/types'
 import {
@@ -24,12 +24,12 @@ const drawerWidth = 255
 
 const Layout = ({ children }: LayoutProps) => {
   const [open, setOpen] = useState(false)
-  // const [title, setTitle] = useState(titles['/'])
-  // const location = useLocation()
+  const [title, setTitle] = useState('/')
+  const location = useLocation()
 
-  // useEffect(() => {
-  //   setTitle(titles[location.pathname])
-  // }, [location.pathname])
+  useEffect(() => {
+    setTitle(titles[location.pathname])
+  }, [location.pathname])
 
   const toggleDrawer = () => {
     setOpen(!open)
@@ -50,7 +50,7 @@ const Layout = ({ children }: LayoutProps) => {
             <Menu color='#103b66' />
           </IconButton>
           <Typography variant='h6' noWrap component='div' color='#103b66'>
-            {/* {title} */}Dashboard
+            {title}
           </Typography>
           <Box sx={{ flexGrow: 1 }} />
           <Badge badgeContent={2} color='error'>

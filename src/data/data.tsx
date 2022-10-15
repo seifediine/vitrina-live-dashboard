@@ -17,6 +17,7 @@ import {
   Eye,
 } from '../assets/icons'
 
+import { navbarTitleProps } from './types'
 interface SubListItem {
   name: string
   path: string
@@ -164,3 +165,32 @@ export const secondLinks: Array<SidebarItem> = [
     icon: <Eye color='#103b66' />,
   },
 ]
+
+export const titles: navbarTitleProps = {
+  '/': 'Dashboard',
+  '/procduts': 'Products',
+  '/categories': 'Categories',
+  '/promotional-package': 'Promotional Package',
+  '/orders': 'Orders',
+  '/customers': 'Customers',
+  '/delivery-options': 'Delivery Options',
+  '/payment-options': 'Payment Options',
+  '/store-design': 'Store Design',
+  '/subscription': 'Subscription',
+  '/integrations': 'Integrations',
+  '/extensions': 'Extensions',
+  '/settings': 'Settings',
+  '/support': 'Customer Support',
+  '/share-shop': 'Share your Shop',
+  '/view-shop': 'View your Shop',
+  '/discount-codes': 'Discount Codes',
+  '/exit-intent': 'Exit Intent',
+  '/checkout-features': 'Checkout Features',
+  '/post-purchase': 'Post-Purchase Conversion',
+  '/cart-abandonment': 'Cart Abandonment',
+  '/timer-checkout': 'Timer Checkout',
+  '/social-sell': 'Sell on Social',
+  '/special-offer': 'Special Offer',
+  '/seasonal-offer': 'Seasonal Offer',
+  '/logout': "You're logged out!",
+}

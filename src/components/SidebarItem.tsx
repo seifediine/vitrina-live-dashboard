@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { ReactNode, useState } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import {
   Collapse,
@@ -46,7 +46,7 @@ const SidebarItem = ({
 }: {
   name: string
   path?: string
-  icon: JSX.Element
+  icon?: ReactNode
   subList?: Array<{ name: string; path: string }>
 }) => {
   const navigate = useNavigate()
@@ -101,7 +101,7 @@ const SidebarItem = ({
       <>
         <ListItem disableGutters>
           <ListItemButton
-            onClick={() => navigate(path)}
+            onClick={() => navigate(path!)} // The exclamation mark is the "non-null assertion operator"
             sx={location.pathname === path ? styles.active : null}
           >
             <ListItemIcon style={styles.icon}>{icon}</ListItemIcon>
