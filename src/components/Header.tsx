@@ -35,10 +35,8 @@ const Header = ({ text, email }: HeaderProps) => {
       <Typography variant='h4' style={styles.welcomeText}>
         {text}
       </Typography>
-      <Link to='/'>
-        <Typography variant='body1' style={styles.link}>
-          {email}
-        </Typography>
+      <Link to='/' style={styles.link}>
+        <Typography variant='body1'>{email}</Typography>
         <ExternalLink color='#fff' />
       </Link>
     </Box>

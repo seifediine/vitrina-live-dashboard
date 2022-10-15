@@ -6,11 +6,15 @@ import {
   MobileApps,
   Extensions,
   LatestNews,
+  ConfigureShop,
+  Trustpilot,
+  InviteFriend,
+  CustomerSupport,
 } from '../components/cards'
 
 const styles = {
   container: {
-    padding: '0 40px',
+    padding: '0 30px',
   },
 }
 
@@ -36,6 +40,21 @@ const Dashboard = () => {
             </Grid>
             <Grid item md={12} lg={12}>
               <LatestNews />
+            </Grid>
+          </Grid>
+          {/* Side Content */}
+          <Grid container item lg={4} spacing={2}>
+            <Grid item xs={6} sm={6} md={6} lg={12}>
+              <ConfigureShop />
+            </Grid>
+            <Grid item xs={6} sm={6} md={6} lg={12}>
+              <Trustpilot />
+            </Grid>
+            <Grid item xs={6} sm={6} md={6} lg={12}>
+              <InviteFriend />
+            </Grid>
+            <Grid item xs={6} sm={6} md={6} lg={12}>
+              <CustomerSupport />
             </Grid>
           </Grid>
         </Grid>
